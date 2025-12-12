@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Untuk Nayla — Website Bucin</title>
+  <style>
+    :root{ --bg:#fff7fb; --card:#fff; --accent:#ff6b9a; --muted:#8b8b98; --glass: rgba(255,255,255,0.7)}
+    *{box-sizing:border-box;font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:linear-gradient(180deg,#fff7fb 0%, #fff 40%);color:#333}
+    header{padding:40px 20px;text-align:center}
+    .title{font-size:2.25rem;margin:0;display:flex;align-items:center;justify-content:center;gap:12px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:20px;max-width:1100px;margin:20px auto}
+
+    .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(170,140,160,0.08);position:relative;overflow:hidden}
+    .heart{position:absolute;right:-40px;top:-40px;opacity:0.06;font-size:200px;transform:rotate(-20deg)}
+    .avatar{width:84px;height:84px;border-radius:50%;display:inline-block;overflow:hidden;vertical-align:middle}
+    .name{font-weight:700;font-size:1.1rem;margin-left:12px}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .praise{margin-top:12px;font-size:1rem}
+
+    .gallery{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .sticker{width:96px;height:96px;border-radius:12px;background:linear-gradient(180deg,#fff,#fffefc);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(120,90,110,0.06)}
+    .sticker svg{width:70px;height:70px}
+
+    footer{padding:30px;text-align:center;color:var(--muted)}
+    
+    /* Tambahan style untuk tombol di footer */
+    footer .btn-cta {
+        display: block; /* Agar tombol berada di baris baru dan melebar */
+        margin: 20px auto 0 auto; /* Margin di atas tombol dan ditengah */
+        max-width: fit-content; /* Biar ukurannya pas dengan isi teks */
+        font-size: 1.1rem; /* Ukuran font lebih besar sedikit */
+        padding: 14px 24px;
+    }
+
+    /* cute button */
+    .btn{display:inline-block;background:var(--accent);color:white;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 10px 30px rgba(255,107,154,0.18)}
+
+    /* confetti */
+    .confetti{position:fixed;left:0;right:0;top:0;pointer-events:none;height:0}
+
+    @media (max-width:420px){.title{font-size:1.6rem}}
+  </style>
+</head>
+<body>
+  <div class="confetti" aria-hidden="true">
+    </div>
+  <header>
+    <div class="title">❤️ Untuk Nayla, Dari Ke'is</div>
+    <div class="subtitle">Website yang dibuat sama anak multimedia untuk pacarnya tercinta (anjay, aku ngerjain ini 2 minggu) ✨</div>
+  </header>
+
+  <main class="card-grid">
+    <article class="card">
+      <div class="heart">❤</div>
+      <div style="display:flex;align-items:center">
+        <div class="avatar" style="background:linear-gradient(135deg,#ffefe8,#fff1fb);display:flex;align-items:center;justify-content:center">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="60" cy="60" r="56" fill="#fff" />
+            <g transform="translate(18,24)">
+              <ellipse cx="30" cy="36" rx="22" ry="18" fill="#ffdbe6" />
+              <circle cx="20" cy="24" r="4" fill="#6b3f56" />
+              <circle cx="40" cy="24" r="4" fill="#6b3f56" />
+              <path d="M18 46 Q30 56 42 46" stroke="#6b3f56" stroke-width="2" fill="none" stroke-linecap="round" />
+            </g>
+          </svg>
+        </div>
+        <div style="margin-left:12px">
+          <div class="name">Nayla si gumushh</div>
+          <div class="meta">Hai cayangg mai bebii luvlyy, semoga kamu suka ya!!</div>
+        </div>
+      </div>
+      <p class="praise">Hai sayangg, makasi ya udah jadi tempat untuk aku berkeluh kesah, untuk cerita, untuk disita waktunya padahal gaterlalu penting hehehe. I love you 💖</p>
+      <div style="margin-top:8px"><a class="btn" href="#stories">Lihat cerita manis</a></div>
+    </article>
+
+    <article class="card" id="stories">
+      <h3 style="margin:0 0 8px 0">Kenangan kenangan kecil tentang kita, yang ngebuat aku bersyukur banget punya kamu 🤏</h3>
+      <p class="meta">Beberapa hal yang udah kita lakukan di 2025 ini.</p>
+
+      <div style="margin-top:12px">
+        <strong>Nobar 33 Film 🎬</strong>
+        <p class="meta">Kamu pasti tau kan, tahun ini kita nonton <strong>33 film</strong>, termasuk <strong>19 di bioskop</strong> dan puluhan di streaming bareng bareng. Kamu selalu jadi bagian untuk milih film yang mau kita tonton, makasi ya buat <strong>6600 Menitnya</strong>, dan buat aku, <strong>Zootopia 2</strong> jadi salah satu film favorit yang udah kita tonton! Menurut kamu?</p>
+      </div>
+
+      <div style="margin-top:12px">
+        <strong>Waktu kamu bantu aku buat ngerjain Artikel Ilmiah Semester 2 📚</strong>
+        <p class="meta">Kamu sabar banget waktu aku buntu untuk nambahin kata yang jauh dari kriteria minimal. Kamu rela ngabisin waktu buat bantuin aku yang ada saat itu artikel ilmiah kamu aja belum selesai, disitu aku seneng, tapi aku gaenak sama kamu, tapi disatu sisi juga cape karena mau rombak topik awalnya hehe, cmn gajadi karena kamu.</p>
+      </div>
+
+      <div style="margin-top:12px">
+        <strong>Punya Ruangan di Hati Christ 🎭</strong>
+        <p class="meta">Kamu selalu bisa bikin suasana hubungan kita berbunga bunga anjay, kamu selalu hepi, selalu ceria, tapi kadang malah aku yang ngerusak semua kebahagiaan itu. Kamu tu bener bener definisi orang yang sangat berpengaruh untuk mood pasangannya anjay, dan itu <STRONG>AKU!!!</STRONG>.</p>
+      </div>
+
+      <div style="margin-top:12px">
+        <strong>Support system terbaik buat AKU!! 💪</strong>
+        <p class="meta">Waktu aku lagi panik, lagi cape, kamu selalu jadi angin segar yang mau ngasi semangat buat Aku, kamu gapernah keberatan jadi tempat aku yapping panjang lebar padahal isinya keluhan doang. Makasi ya sayang untuk energi positifnya, motivasi semangat aku sekarang bener bener dari kamu doang tauu, akuu senang!! 😄😄😄</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3 style="margin:0 0 8px 0">Hal-hal kecil yang bikin aku berbunga bunga anjay mabar ❤️</h3>
+      <p class="meta">Harusnya si kamu bakal baca ini setelah aku ngajakin Relationship Wrapped kita ya, soalnya disini aku bikin di tanggal 10 Desember, cuman isinya mirip kok.</p>
+
+      <div style="margin-top:14px">
+        <strong>Clingiest Side of Nayla</strong>
+        <p class="praise">Aku suka banget waktu kamu cerita hal-hal kecil. Entah itu tentang hari kamu di kampus, tentang temen kamu, atau hal random yang menurut kamu sepele. Tapi buat aku? Itu momen yang bikin aku bisa ngerasa deket banget sama kamu. Aku suka liat kamu disaat kamu bisa mengekspresikan apapun tanpa beban, jadi nayla yang gabisa ngehadapin semuanya sendirian, jadi nayla yang perlu bantuan ke pasangannya, aku sukakk!!!</p>
+      </div>
+
+      <div style="margin-top:14px">
+        <strong>Senyum kamu 😘</strong>
+        <p class="praise">Senyum kamu itu kayak gaada jedanya anjayy, lebar mulu. Kadang aku lagi bete atau sumpek, terus aku kepikiran ekspresi kamu waktu ketawa… atau senyum, entah kenapa langsung kayak ngereset semua stres aku.</p>
+      </div>
+
+      <div style="margin-top:14px">
+        <strong>Cara kamu perhatian ke Aku</strong>
+        <p class="praise">Aku tu sering mikir, “kok ada ya orang yang perhatian tapi ga lebay, lembut tapi ngena, sederhana tapi kerasa banget?” Itu kamu, Nay. Kamu tuh punya cara sayang yang ga brutal kaya aku, tapi rasanya tetep ada. Cuman ya kadang aku jadi mikir dikit, apakah kamu pengen diperlakukan seperti kamu memperlakukan aku? karena ya kamu liat sendiri aku terlalu banyak yappingnya kalau peerhatian.</p>
+      </div>
+
+      <div style="margin-top:14px">
+        <strong>Interaksi kecil 🤏</strong>
+        <p class="praise">Topik receh, stiker stiker gemay kamu, panggilan aneh… semuanya tu nyambung dan bikin aku nyaman. Bahkan kalau cuma saling godain, aku tetep ngerasa, “oh iya… ini orang yang paling bisa bikin hari aku berwarna.” Apalagi kadang ada disatu hari interaksi kita sedikit kan, jadi interaksi kaya gitu bisa jadi obat anjay, wufyu!!</p>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3 style="margin:0 0 8px 0">Surat cinta mini ❤️</h3>
+      <p class="meta">Untuk dibaca ketika Nayla butuh pelukan hangat lewat kata-kata dari Profesor Ke'is.</p>
+      <blockquote style="margin:12px 0 0 0;padding:12px;border-left:4px solid #ffd7e6;background:linear-gradient(180deg,#fff,#fffaf6);border-radius:8px">
+        "Terima kasih sudah jadi rumah paling tenang di tahun yang chaos ini. Kamu bikin aku tumbuh, bahagia, dan merasa cukup. Aku sayang banget sama kamu, dan aku akan selalu pilih kamu di setiap harinya, setiap cerita, dan setiap versi aku di universe lainnya." — Christ
+      </blockquote>
+    </article>
+
+  </main>
+
+  <footer>
+    <div>Kamu bisa baca ini kapanpun kamu mau ya sayang, i love you! 💌</div>
+    
+    <button class="btn btn-cta" onclick="alert('Love you Nay, kita jalanin hubungan ini bareng bareng ya 💖')">
+        COBA PENCET
+    </button>
+  </footer>
+
+  <script>
+    // small confetti effect (decorative, lightweight)
+    (function(){
+      const confetti = document.querySelector('.confetti');
+      for(let i=0;i<18;i++){
+        const el = document.createElement('div');
+        el.style.position='absolute';
+        el.style.left=(Math.random()*100)+'%';
+        el.style.top=(Math.random()*20)+'vh';
+        el.style.width='8px';el.style.height='12px';el.style.opacity=0.9;
+        el.style.transform='rotate('+Math.floor(Math.random()*360)+'deg)';
+        el.style.borderRadius='2px';
+        el.style.background=['#ffd1e6','#fff2cc','#d6fff0','#ffd7a6'][i%4];
+        el.style.transition='transform 6s linear, top 6s linear';
+        confetti.appendChild(el);
+        setTimeout(()=>{el.style.top='110vh';el.style.transform='translateY(20vh) rotate(720deg)';},100 + i*120);
+      }
+    })();
+  </script>
+</body>
+</html>
